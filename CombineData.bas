@@ -1,5 +1,5 @@
 Attribute VB_Name = "Module2"
-Sub TongHopDuLieuTuNhieuSheet()
+Sub AggregateDataFromMultipleSheets()
 
     Dim wsTongHop As Worksheet
     Dim ws As Worksheet
@@ -12,7 +12,7 @@ Sub TongHopDuLieuTuNhieuSheet()
     ' Kh?i t?o
     Set wsTongHop = ThisWorkbook.Sheets("tonghop")
     dongBatDau = 2
-    ' Xo· d? li?u cu
+    ' Xo√° d? li?u cu
     wsTongHop.Range("A2:F1000").ClearContents
     
     wsTongHop.Range("A1:F1").Value = Array("Date", "Product", "Quantity", "Unit Price", "Total", "Store #")
